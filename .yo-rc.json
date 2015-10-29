@@ -1,0 +1,13 @@
+{
+  "generator-lb": {
+    "name": "empyrean",
+    "features": [
+      "includeFEFramework",
+      "includejQuery"
+    ],
+    "jQuery": "includejQuery2",
+    "feFramework": "includeBootstrap",
+    "sassCompilator": "libSass",
+    "multiLanguage": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "empyrean",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.4",
+    "jquery": "~2.1.3"
+  }
+}
