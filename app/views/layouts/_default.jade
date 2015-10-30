@@ -1,3 +1,5 @@
+//-Includes the variables
+include ../modules/_config
 doctype html
 <!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
@@ -7,8 +9,9 @@ doctype html
 <!--[if !IE] <![IGNORE[--><!--[IGNORE[]]--> <html class="no-js noie">
 head
   meta(charset="utf-8")
-  title empyrean
-  meta(name="description", content="")
+  title
+    | #{pageTitle}
+  meta(name="description", content="metaDesc")
   meta(name="viewport", content="width=device-width, initial-scale=1")
   link(rel="shortcut icon", href="/favicon.ico")
   //- build:css /styles/vendor.min.css -->
@@ -20,14 +23,11 @@ head
   //- endbuild -->
 
 body
-
+  include ../modules/_navbar
   include ../modules/_header
-
   main
-    block content
-       
-    include ../modules/_sidebar   
 
+    block content
   include ../modules/_footer
   
   //- build:js(./app/) /scripts/vendor.min.js -->
