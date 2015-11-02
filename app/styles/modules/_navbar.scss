@@ -1,0 +1,26 @@
+section.nav-container{
+	padding-top:21px;  
+	figure{
+		.brand-logo{
+			display: inline-block;
+		}
+	}
+	nav{
+		ul.nav-bar{
+				margin-top:10px;  
+
+			li {
+				display: inline-block;
+				list-style: none;
+				a{
+					font-family:$font-primary;
+					display: inline-block;
+					padding:0 10px 0 10px ; 
+					border-right:2px solid $red-color;
+					color:$nav-links;
+				}
+			}
+
+		}
+	}
+}
