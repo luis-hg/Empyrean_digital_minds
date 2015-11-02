@@ -1,5 +1,6 @@
 section.nav-container{
 	padding-top:21px;  
+	padding-bottom:21px;  
 	figure{
 		.brand-logo{
 			display: inline-block;
@@ -29,6 +30,7 @@ section.nav-container{
 
 				&:last-child a {
 					border:none;
+					cursor: pointer;
 				}
 			}
 

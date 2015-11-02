@@ -5,7 +5,7 @@
 	height: 450px;
 	margin: 0 auto;
 
-	h1, h3, button{
+	h1, h3, .btn-top{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -28,28 +28,23 @@
 		color:#cccccc;
 		top:35%;
 	}
-	.btn {
-		@include transition(.6s ease);
-		@include font-size(22px);
-		font-family:$font-primary;
-		-webkit-border-radius: 28;
-		-moz-border-radius: 28;
-		border-radius: 28px;
-		-webkit-box-shadow: 0px 1px 3px #666666;
-		-moz-box-shadow: 0px 1px 3px #666666;
-		box-shadow: 0px 1px 3px #666666;
-		color: #ffffff;
-		background: #9c2d32;
-		padding: 20px 50px 20px 50px;
-		text-decoration: none;
-		top:41%;
-
-	&:hover{
+	.btn-top{
+		@include transition(1s ease);
+		@include font-size(24px);
+		border:0 none;
 		color:#fff;
-		background:#bf3f45;
+		background-color:$red-color;
+		padding: 15px 40px 15px 40px;
+		font-family:$font-primary;
+		border-radius:20px;
+		-webkit-border-radius: 20px;
+		top:40%;
+		cursor: pointer;
+		outline: none;
+
+		&:hover{
+			@include transition(.3s ease);
+			background-color:$btn-color-hover;
+		}
 	}
-
-	}
-
-
 }
