@@ -1,3 +1,55 @@
-p.herotext{
-	@include font-size(10px)
+.hero{
+	background: url(../images/hero-img.jpg);
+	background-repeat:no-repeat;
+	width: 960px;
+	height: 450px;
+	margin: 0 auto;
+
+	h1, h3, button{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		text-align:center;
+		margin: 0 auto;
+	}
+	
+	h1{
+		@include font-size(80px);
+		color:#fff;
+		text-transform: uppercase;
+		font-weight:normal;
+		top:30%;
+	}
+
+	h3{
+		@include font-size(30px);
+		font-weight:normal;
+		color:#cccccc;
+		top:35%;
+	}
+	.btn {
+		@include transition(.6s ease);
+		@include font-size(22px);
+		font-family:$font-primary;
+		-webkit-border-radius: 28;
+		-moz-border-radius: 28;
+		border-radius: 28px;
+		-webkit-box-shadow: 0px 1px 3px #666666;
+		-moz-box-shadow: 0px 1px 3px #666666;
+		box-shadow: 0px 1px 3px #666666;
+		color: #ffffff;
+		background: #9c2d32;
+		padding: 20px 50px 20px 50px;
+		text-decoration: none;
+		top:41%;
+
+	&:hover{
+		color:#fff;
+		background:#bf3f45;
+	}
+
+	}
+
+
 }
