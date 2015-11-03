@@ -1,7 +1,7 @@
 
 section.our-values{
-	height: 360px;
 	background:$red-color;
+	min-height: 360px;
 
 	h1{
 		text-align:center;
@@ -11,5 +11,23 @@ section.our-values{
 		font-weight:bold;
 		margin-top:40px; 
 	}
+	article{
+		text-align:center;
 
+		img{
+			margin-top:50px;
+			border-radius:40px;
+		}
+
+		h3{
+			font-size:2rem;
+			color: $white-text-sec-red;
+			font-family:$font-primary;
+
+		}
+		p{
+			color:$white-text-sec-red;
+			
+		}
+	}
 }
