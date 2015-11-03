@@ -1,3 +1,30 @@
-.color{
-	background:green;
+.about{
+	padding-top:37px; 
+	
+	h1, h3{
+		text-align:center;
+		margin: 0 auto;
+		font-family: $font-primary;
+	}
+
+	h1{
+		text-transform: uppercase;
+		color:$black-healine;
+	}
+	h3{
+		@include font-size(30px);
+		color:$grey-text;
+	}
+	.devTeam{
+		padding-left: 25%;
+
+		h2{
+			@include font-size(28px);
+			color:black;
+		}
+		p{
+			color:$grey-text;
+			font-size:16px;
+		}
+	}
 }
