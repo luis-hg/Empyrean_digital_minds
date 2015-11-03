@@ -1,4 +1,4 @@
-section.nav-container{
+section.nav-container.mainnav{
 	padding-top:21px;  
 	padding-bottom:21px;  
 	figure{
@@ -15,7 +15,7 @@ section.nav-container{
 		}
 	}
 	nav{
-		ul.nav-bar{
+		ul.navbar-nav{
 				//margin-top:15px;
 				//position:relative;
 				//right: 15%;  
@@ -24,7 +24,6 @@ section.nav-container{
 				//display: inline-block;
 				list-style: none;
 				vertical-align: middle;
-
 				a{	@include font-size(20px);
 					font-family:$font-primary;
 					display: inline-block;
@@ -40,6 +39,24 @@ section.nav-container{
 				}
 			}
 
+		}
+	}
+}
+
+/*  Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	section.nav-container.mainnav{
+
+		nav{
+			ul.navbar-nav{
+
+				li{
+					text-align: center;
+					a{
+						border: none;
+					}
+				}
+			}
 		}
 	}
 }
