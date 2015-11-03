@@ -8,14 +8,20 @@ section.nav-container{
 			left: 25%;
 		}
 	}
+	.navbar-toggle{
+		background: #333;
+		span{
+			background: white;
+		}
+	}
 	nav{
 		ul.nav-bar{
-				margin-top:15px;
-				position:relative;
-				right: 15%;  
+				//margin-top:15px;
+				//position:relative;
+			//	right: 15%;  
 
 			li {
-				display: inline-block;
+				//display: inline-block;
 				list-style: none;
 				vertical-align: middle;
 
