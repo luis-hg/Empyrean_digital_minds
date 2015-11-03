@@ -4,9 +4,15 @@ section.nav-container.container
       figure
         a.brand-logo(href="#")
           img(src="images/empyrean_logo.jpg" title="Empyrean - Digital Minds")
+      div.container      
+        button(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar").navbar-toggle.collapsed
+          span.sr-only
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar      
     .col-md-6 
-      nav
-        ul.nav-bar
+      nav#navbar.collapse.navbar-collapse
+        ul.nav.navbar-nav
           li 
             a(href="#") Home
           li 
