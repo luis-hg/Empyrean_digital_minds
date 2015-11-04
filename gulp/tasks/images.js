@@ -4,6 +4,7 @@ var gulp = require('gulp-help')(require('gulp'));
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var gulpif = require('gulp-if');
+var pngSprite = require('png-sprite');
 
 var config = require('./../config.js');
 
@@ -26,4 +27,15 @@ gulp.task('images', 'Run Imagemin optimalizations and copy to `dist/`', ['copySv
   return gulp.src(config.images.src)
     .pipe(gulpif(config.optimizeImages, cache(imagemin(config.images.cfg))))
     .pipe(gulp.dest(config.images.dest));
+});
+
+//sprites
+gulp.task('buildSprites', function (done) {
+  return gulp.src('images/sprites/**/*.png')
+      .pipe(pngSprite.gulp({
+        cssPath: 'sprites.scss',
+        pngPath: 'sprites.png',
+        namespace: 'sprites'
+      }))
+      .pipe(gulp.dest('./dist/'))
 });
