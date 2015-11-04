@@ -2,8 +2,7 @@
 	max-width:100%;
 	min-height: 360px;
 	background: $red-color;
-	padding-top:40px;
-	padding-bottom:40px;
+	padding: 40px 10px 40px 10px;
 	
 	h1, h3, article{
 		text-transform:uppercase;
@@ -11,8 +10,14 @@
 		text-align:center;
 		font-family: $font-primary;
 	}
+	h3{
+		@include font-size(30px);
+	}
 	article{
-		
+		max-width:960px;
+		margin: 0 auto;
+		padding-top:40px; 
+
 		img{
 			border-radius: 40px;
 		}
