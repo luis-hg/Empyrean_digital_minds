@@ -9,7 +9,6 @@ gulp.task('serve', 'Serve project with livereload and file watching',function (c
   runSequence(
     'wiredep',
     ['styles','templates', 'scripts','images'],
-    
     'browser-sync',
     'watch',
     cb
