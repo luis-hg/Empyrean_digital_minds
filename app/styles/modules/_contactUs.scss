@@ -1,0 +1,22 @@
+
+.contact-us-headline, .contact-us-form{
+	margin:0 auto;
+	background:$white-text-sec-red;
+	text-align:center;
+
+	h1{
+		font-family:$font-primary;
+		text-transform: uppercase;
+		color:$black-healine;
+		font-weight:bold;	
+	}
+	input[type="text"]{
+		width:55%;
+		height:120px;
+		background:$color-bg-form;
+		text-align:center;
+		border:1px solid #cfcfcf;
+		border-radius:4px;
+		font-size:20px;
+	}
+}
