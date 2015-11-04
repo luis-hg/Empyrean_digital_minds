@@ -1,0 +1,38 @@
+section.portfolio{
+	text-align:center;
+	h1{
+		color:$black-healine;
+		text-align:center;
+		font-family: $font-primary;
+		text-transform:uppercase;
+		font-weight:bold;
+	}
+	h3{
+		color:$grey-text;
+		margin-top:0px; 
+	}
+
+	section.wrapper{
+		margin-top: 5%;
+
+		article, section{
+			padding-top: 5%;
+		}
+
+		p{
+			@include font-size(28px);
+			line-height:32px;
+			color:$grey-text;
+			font-family:$font-primary;
+			padding-top: 60px;
+		}
+	
+
+
+		a{
+			font-family: $font-primary;
+			color:$red-color;
+			@include font-size(28px);
+		}
+	}
+}
