@@ -21,14 +21,6 @@ gulp.task('copySvg', 'Copy SVGs to `dist/`', function () {
     .pipe(gulp.dest(config.images.dest));
 });
 
-// Optimize images
-
-gulp.task('images', 'Run Imagemin optimalizations and copy to `dist/`', ['copySvg'], function () {
-  return gulp.src(config.images.src)
-    .pipe(gulpif(config.optimizeImages, cache(imagemin(config.images.cfg))))
-    .pipe(gulp.dest(config.images.dest));
-});
-
 //build sprites
 gulp.task('buildSprites', function (done) {
   return gulp.src('app/images/sprites/*.png')
@@ -39,3 +31,12 @@ gulp.task('buildSprites', function (done) {
       }))
       .pipe(gulp.dest('app/'))
 });
+
+// Optimize images
+
+gulp.task('images', 'Run Imagemin optimalizations and copy to `dist/`', ['copySvg','buildSprites'], function () {
+  return gulp.src(config.images.src)
+    .pipe(gulpif(config.optimizeImages, cache(imagemin(config.images.cfg))))
+    .pipe(gulp.dest(config.images.dest));
+});
+

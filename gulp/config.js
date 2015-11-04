@@ -24,6 +24,7 @@ var scripts = 'scripts';
 var styles = 'styles';
 var views = 'views';
 
+
 // Rewrite rules enables removing .html extensions in development.
 // This are possible routes for same test.html file:
 // http://localhost:3000/test.html
