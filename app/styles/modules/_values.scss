@@ -10,13 +10,31 @@
 		text-align:center;
 		font-family: $font-primary;
 	}
-	h3{
-		@include font-size(30px);
+	span{
+		width:200px;
+    	border: solid $white-text-sec-red 1px;
+    	display: inline-block;
+    	vertical-align: middle;
+    	position:relative;
+    	top:110px;
+
+		&:first-child {
+    		left:60px;
+    	}
+
+    	&:last-child {
+    		right:60px;
+    	}
 	}
 	article{
 		max-width:960px;
 		margin: 0 auto;
 		padding-top:40px; 
+		
+		h3{
+			@include font-size(30px);
+		}
+
 
 		img{
 			border-radius: 40px;
