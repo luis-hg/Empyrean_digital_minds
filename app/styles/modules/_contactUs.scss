@@ -1,4 +1,9 @@
 
+section.main-container-form{
+	margin-top:-5%; 
+}
+
+
 .contact-us-headline, .contact-us-form{
 	margin:0 auto;
 	background:$white-text-sec-red;
@@ -11,12 +16,56 @@
 		font-weight:bold;	
 	}
 	input[type="text"]{
-		width:55%;
-		height:120px;
+		width:50%;
+		height:60px;
 		background:$color-bg-form;
 		text-align:center;
 		border:1px solid #cfcfcf;
 		border-radius:4px;
 		font-size:20px;
 	}
+	input[type="email"]{
+		width:50%;
+		height:60px;
+		background:$color-bg-form;
+		text-align:center;
+		border:1px solid #cfcfcf;
+		border-radius:4px;
+		font-size:20px;
+		margin-top:2%;
+	}
+	textarea{
+		resize: none;
+		width:50%;
+		height:130px;
+		text-align:center;
+		font-size:20px;
+		margin-top:2%;
+		background:$color-bg-form;
+		border:1px solid #cfcfcf;	
+		border-radius:4px;
+	}
+	button{
+		@include transition(.3s ease);
+		width: 220px;
+		height: 60px;
+		display: block;
+		margin: 0 auto;
+		background:$red-color;
+		font-family:$font-primary;
+		font-size:16px;
+		color:$white-text-sec-red;
+		border-radius:30px;
+		border:0 none;
+		outline:none;
+		margin-top:2%;
+
+		&:hover{
+			@include transition(.3s ease);
+			background-color:$btn-color-hover;
+		}
+	}	
+}
+.contact-us-headline{
+	margin-top:15%; 
 }
