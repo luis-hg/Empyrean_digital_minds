@@ -29,13 +29,13 @@ gulp.task('images', 'Run Imagemin optimalizations and copy to `dist/`', ['copySv
     .pipe(gulp.dest(config.images.dest));
 });
 
-//sprites
+//build sprites
 gulp.task('buildSprites', function (done) {
-  return gulp.src('images/sprites/**/*.png')
+  return gulp.src('app/images/sprites/*.png')
       .pipe(pngSprite.gulp({
-        cssPath: 'sprites.scss',
-        pngPath: 'sprites.png',
+        cssPath: 'styles/_sprites.scss',
+        pngPath: 'images/sprites.png',
         namespace: 'sprites'
       }))
-      .pipe(gulp.dest('./dist/'))
+      .pipe(gulp.dest('app/'))
 });

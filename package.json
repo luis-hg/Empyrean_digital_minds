@@ -46,6 +46,7 @@
     "jade": "~1.11.0",
     "map-stream": "~0.0.5",
     "node-sass": "~3.3.2",
+    "png-sprite": "^0.1.1",
     "require-dir": "~0.3.0",
     "run-sequence": "~1.1.0",
     "wiredep": "~2.2.2",
