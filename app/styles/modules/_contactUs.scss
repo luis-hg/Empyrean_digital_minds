@@ -9,11 +9,21 @@ section.main-container-form{
 	background:$white-text-sec-red;
 	text-align:center;
 
+	h1, h3{
+		margin:0px;
+		font-family:$font-primary;		
+	}
+
 	h1{
-		font-family:$font-primary;
 		text-transform: uppercase;
 		color:$black-healine;
-		font-weight:bold;	
+		font-weight:bold;
+		padding-top:45px;
+		padding-bottom:10px;
+	}
+	h3{
+		padding-bottom:45px;
+		color:$nav-links;
 	}
 	input[type="text"]{
 		width:512px;
@@ -68,4 +78,7 @@ section.main-container-form{
 }
 .contact-us-headline{
 	margin-top:15%; 
+}
+.contact-us-form{
+	padding-bottom: 45px;
 }
