@@ -1,0 +1,27 @@
+footer{
+	min-height: 160px;
+	background:$footer-bg;
+	text-align:center;
+	
+	div:nth-child(2){
+		text-align:right;
+	}
+
+	div:last-child{
+		text-align:left;
+	}
+
+	article{
+		padding-top:60px;
+	}
+
+	img{
+		margin-right:10px; 
+	}
+
+	p{
+		color: white;
+		font-family:$font-primary;
+	}
+
+}	
