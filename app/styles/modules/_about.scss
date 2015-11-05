@@ -10,6 +10,7 @@ section.about{
 	h1{
 		text-transform: uppercase;
 		color:$black-healine;
+		font-weight:bold;
 	}
 	h3{
 		@include font-size(30px);
