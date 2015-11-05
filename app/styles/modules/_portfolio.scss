@@ -10,6 +10,7 @@ section.portfolio{
 	h3{
 		color:$grey-text;
 		margin-top:0px; 
+		@include font-size(30px);
 	}
 
 	section.wrapper{

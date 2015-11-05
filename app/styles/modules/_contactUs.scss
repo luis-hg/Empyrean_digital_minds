@@ -24,6 +24,7 @@ section.main-container-form{
 	h3{
 		padding-bottom:45px;
 		color:$nav-links;
+		@include font-size(30px);
 	}
 	input[type="text"]{
 		width:512px;
@@ -87,7 +88,7 @@ section.main-container-form{
 //READY TO TALK ABOUT YOUR...
 
 .contact-us-form-red-block{
-	height:190px;
+	height:290px;
 	background:$red-color;
 
 	h1{

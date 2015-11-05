@@ -11,6 +11,7 @@ section.about{
 		text-transform: uppercase;
 		color:$black-healine;
 		font-weight:bold;
+		padding-bottom: 10px;
 	}
 	h3{
 		@include font-size(30px);
