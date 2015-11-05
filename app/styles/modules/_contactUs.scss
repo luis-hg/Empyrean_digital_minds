@@ -93,6 +93,7 @@ section.main-container-form{
 		text-transform:uppercase;
 	}
 	button{
+		@include transition(.3s ease);
 		background:$red-color;
 		border: 4px solid $white-text-sec-red;
 		color:$white-text-sec-red;
@@ -104,6 +105,15 @@ section.main-container-form{
     	text-transform:uppercase;
     	cursor: pointer;
     	outline:none;
+    	margin-top:28px;
+
+    	&:hover{
+    		@include transition(.6s ease);
+    		background:$white-text-sec-red;
+    		color:$red-color;
+    		box-shadow:10px 0px 15px 0px #333;
+    		cursor: pointer;
+    	}
 	}
 }
 

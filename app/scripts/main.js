@@ -1,1 +1,3 @@
-const myApp = myApp || {};
+$(function(){
+	console.log('HI JQUERY');
+})

@@ -20,7 +20,6 @@
     "gulp-cache": "~0.3.0",
     "gulp-concat": "~2.6.0",
     "gulp-data": "~1.2.0",
-    "gulp-eslint": "~1.0.0",
     "gulp-extend": "~0.2.0",
     "gulp-filter": "~3.0.1",
     "gulp-help": "~1.6.0",
