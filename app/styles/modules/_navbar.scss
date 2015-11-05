@@ -27,7 +27,7 @@ section.nav-container.mainnav{
 	}
 	nav{
 		ul.navbar-nav{
-				//margin-top:15px;
+				margin-top:15px;
 				//position:relative;
 				//right: 15%;  
 
@@ -35,7 +35,7 @@ section.nav-container.mainnav{
 				//display: inline-block;
 				list-style: none;
 				vertical-align: middle;
-				a{	@include font-size(20px);
+				a{	@include font-size(22px);
 					font-family:$font-primary;
 					display: inline-block;
 					padding:0 18px 0 18px ; 
