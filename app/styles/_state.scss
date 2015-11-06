@@ -2,6 +2,48 @@
 /*  Small Devices, Phones */ 
 
 //NAV BAR
+@media only screen and (max-width : 1200px) {
+
+	section.nav-container.container.mainnav{
+		display:none;
+		width: 0px;
+		height: 0px;
+	}
+	
+	section.mobile-container{
+		padding:20px 0 20px 0;
+		text-align:center;
+		background:$footer-bg;
+		.mobile{
+				background:$red-color;
+				margin-top: 5%;
+
+			ul{
+				list-style-type: none;
+				padding: 0px;
+
+				li{
+				    padding: 25px 0px 25px 0px;
+
+					&:hover{
+						background:$footer-bg;
+					}
+
+				}
+
+
+				a{
+					text-align:center;
+					font-family:$font-primary;
+					color:#fff;
+					font-size:24px;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
+
 @media only screen and (max-width : 768px) {
 
 	section.nav-container.container.mainnav{
@@ -63,7 +105,7 @@
 @media only screen and (max-width : 768px) {
 	.hero{
 		background-size: inherit;
-		margin-top:10px;
+		//margin-top:10px;
 
 		h1{
 			top:15%;
@@ -82,9 +124,14 @@
 //ABOUT US
 @media only screen and (max-width : 768px) {
 	section.about{
-
+		padding-bottom:30px;
 		.mobile-img{
-			margin-top: 10%;
+			//margin-top: 10%;
+			display: none;
+		}
+		.devTeam-container{
+			padding-left: 0px;
+			text-align: center;
 		}
 	}
 }
@@ -96,6 +143,7 @@
 		input[type="email"], input[type="text"], textarea{
 			width:100%;
 		}
+    	padding: 40px;
 	}	
 }
 
@@ -125,16 +173,4 @@ footer{
 		padding-top:0px;
 	}
 }	
-
-
-
-
-
-
-
-
-
-
-
-
 }
