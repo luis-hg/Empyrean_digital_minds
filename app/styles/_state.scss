@@ -104,3 +104,37 @@
 		font-size:30px;
 	}
 }
+
+//footer
+@media only screen and (max-width: 768px) {
+
+footer{
+	
+	padding-top:25px; 
+
+
+	div:nth-child(2){
+		text-align:center;
+	}
+
+	div:last-child{
+		text-align:center;
+	}
+
+	article{
+		padding-top:0px;
+	}
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+}
