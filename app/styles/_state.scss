@@ -1,1 +1,82 @@
 /*State rules are ways to describe how our modules or layouts will look when in a particular state. Is it hidden or expanded*/
+/*  Small Devices, Phones */ 
+
+//NAV BAR
+@media only screen and (max-width : 768px) {
+
+	section.nav-container.container.mainnav{
+		display:none;
+		width: 0px;
+		height: 0px;
+	}
+	
+	section.mobile-container{
+		margin-top:10px;
+		text-align:center;
+		
+		.mobile{
+				background:$red-color;
+				border-radius:1%;
+
+			ul{
+				list-style-type: none;
+				padding: 0px;
+
+				li{
+				    padding: 25px 0px 25px 0px;
+
+					&:hover{
+						background-color:$btn-color-hover;
+						border-radius:6%;
+					}
+
+				}
+
+
+				a{
+					text-align:center;
+					font-family:$font-primary;
+					color:#fff;
+					font-size:24px;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}
+
+//clases for NAV BAR
+.rotate{
+	transition: all 0.4s ease-out;
+	transform: rotate(180deg);
+	cursor:pointer;
+}
+.reverse{
+	transition: all 0.4s ease-out;
+	transform: rotate(0deg);
+	cursor:pointer;
+}
+
+
+
+
+//HERO
+@media only screen and (max-width : 768px) {
+	.hero{
+		background-size: inherit;
+		margin-top:10px;
+
+		h1{
+			top:15%;
+			@include font-size(70px);	 
+		}
+		h3{
+			top:20%;
+		}
+		.btn-top{
+			top:30%;
+		}	
+	}
+}
+
+

@@ -46,7 +46,6 @@ section.nav-container.mainnav{
 
 				&:last-child a {
 					border:none;
-					cursor: pointer;
 				}
 			}
 
@@ -56,19 +55,61 @@ section.nav-container.mainnav{
 
 /*  Small Devices, Phones */ 
 @media only screen and (max-width : 768px) {
-	section.nav-container.mainnav{
 
-		nav{
-			ul.navbar-nav{
+	section.nav-container.container.mainnav{
+		display:none;
+		width: 0px;
+		height: 0px;
+	}
+	
+	section.mobile-container{
+		text-align:center;
+		
+		.mobile{
+				background:$red-color;
+				border-radius:5%;
+
+			ul{
+				list-style-type: none;
+				padding: 0px;
 
 				li{
-					text-align: center;
-					a{
-						border: none;
+				    padding: 20px 0px 20px 0px;
+
+					&:hover{
+						background-color:$btn-color-hover;
+						border-radius:6%;
 					}
+
+				}
+
+
+				a{
+					text-align:center;
+					font-family:$font-primary;
+					color:#fff;
+					font-size:24px;
+					text-decoration:none;
 				}
 			}
 		}
 	}
 }
+
+//clases for mobile
+.rotate{
+	transition: all 0.4s ease-out;
+	transform: rotate(180deg);
+	cursor:pointer;
+}
+.reverse{
+	transition: all 0.4s ease-out;
+	transform: rotate(0deg);
+	cursor:pointer;
+}
+
+
+
+
+
 
