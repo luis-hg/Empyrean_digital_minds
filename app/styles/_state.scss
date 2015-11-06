@@ -5,43 +5,9 @@
 @media only screen and (max-width : 1200px) {
 
 	section.nav-container.container.mainnav{
-		display:none;
-		width: 0px;
-		height: 0px;
+		
 	}
 	
-	section.mobile-container{
-		padding:20px 0 20px 0;
-		text-align:center;
-		background:$footer-bg;
-		.mobile{
-				background:$red-color;
-				margin-top: 5%;
-
-			ul{
-				list-style-type: none;
-				padding: 0px;
-
-				li{
-				    padding: 25px 0px 25px 0px;
-
-					&:hover{
-						background:$footer-bg;
-					}
-
-				}
-
-
-				a{
-					text-align:center;
-					font-family:$font-primary;
-					color:#fff;
-					font-size:24px;
-					text-decoration:none;
-				}
-			}
-		}
-	}
 }
 
 @media only screen and (max-width : 768px) {
