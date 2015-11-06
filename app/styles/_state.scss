@@ -11,12 +11,12 @@
 	}
 	
 	section.mobile-container{
-		margin-top:10px;
+		padding:20px 0 20px 0;
 		text-align:center;
-		
+		background:$footer-bg;
 		.mobile{
 				background:$red-color;
-				border-radius:1%;
+				margin-top: 5%;
 
 			ul{
 				list-style-type: none;
@@ -26,8 +26,7 @@
 				    padding: 25px 0px 25px 0px;
 
 					&:hover{
-						background-color:$btn-color-hover;
-						border-radius:6%;
+						background:$footer-bg;
 					}
 
 				}
@@ -80,3 +79,28 @@
 }
 
 
+//ABOUT US
+@media only screen and (max-width : 768px) {
+	section.about{
+
+		.mobile-img{
+			margin-top: 10%;
+		}
+	}
+}
+
+//FORM
+@media only screen and (max-width : 768px) {
+	
+	.contact-us-form{
+		input[type="email"], input[type="text"], textarea{
+			width:100%;
+		}
+	}	
+}
+
+.contact-us-form-red-block{
+	h1{
+		font-size:30px;
+	}
+}
