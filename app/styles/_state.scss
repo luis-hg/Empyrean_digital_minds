@@ -2,16 +2,6 @@
 /*  Small Devices, Phones */ 
 
 //NAV BAR
-@media only screen and (max-width : 1200px) {
-
-	section.nav-container.container.mainnav{
-		nav{
-			overflow: hidden;
-    		width: 120%;
-		}
-	}
-	
-}
 @media only screen and (max-width : 991px) {
 
 	section.nav-container.container.mainnav{

@@ -26,6 +26,8 @@ section.nav-container.mainnav{
 		}
 	}
 	nav{
+			overflow: hidden;
+    		width: 100%;
 		ul.navbar-nav{
 				margin-top:15px;
 				//position:relative;
