@@ -94,7 +94,23 @@
 		}	
 	}
 }
+@media only screen and (max-width : 570px) {
+	.hero{
+		background-size: inherit;
+		//margin-top:10px;
 
+		h1{
+			top:10%;
+			@include font-size(40px);	 
+		}
+		h3{
+			top:15%;
+		}
+		.btn-top{
+			top:17%;
+		}	
+	}
+}
 
 //ABOUT US
 @media only screen and (max-width : 768px) {

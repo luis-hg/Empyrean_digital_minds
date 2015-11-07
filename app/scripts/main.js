@@ -1,8 +1,7 @@
 $(function(){
 	'use strict';
-
-	//Nav bar
-	function navBar(){
+	var app = {
+		navBar : function (){
 		var menu = $('nav.mobile').css('display','none');
 		var img = $('#logo-responsive');   
 
@@ -23,7 +22,9 @@ $(function(){
 			}
 		});
 	}
+	};
 
-	navBar();
 
+	app.navBar();
+	new WOW().init();
 });
