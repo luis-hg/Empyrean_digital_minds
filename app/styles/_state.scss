@@ -5,7 +5,25 @@
 @media only screen and (max-width : 1200px) {
 
 	section.nav-container.container.mainnav{
-		
+		nav{
+			overflow: hidden;
+    		width: 75%;
+		}
+	}
+	
+}
+@media only screen and (max-width : 991px) {
+
+	section.nav-container.container.mainnav{
+		figure{
+			.brand-logo{
+				left: 36%;
+			}
+		}
+		nav{
+			overflow: hidden;
+    		width: 700px;
+		}
 	}
 	
 }
